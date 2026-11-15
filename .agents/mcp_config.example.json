@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "raspberry-postgres": {
+      "command": "uv",
+      "args": [
+        "run",
+        "postgres-mcp",
+        "--access-mode=restricted"
+      ],
+      "env": {
+        "DATABASE_URI": "postgresql://postgres:<PASSWORD>@<HOST>:5432/postgres",
+        "UV_OVERRIDE": "overrides.txt"
+      }
+    }
+  }
+}
