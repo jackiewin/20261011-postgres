@@ -8,6 +8,7 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "openpyxl>=3.1.5",
     "postgres-mcp==0.3.0",
 ]
 

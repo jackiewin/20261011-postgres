@@ -1,0 +1,21 @@
+請幫我在全域設定檔（Mac/Linux 為 ~/.gemini/config/mcp_config.json，Windows 為 %USERPROFILE%\.gemini\config\mcp_config.json）中設定微軟的 supabase-postgres MCP Server：
+
+command 使用 npx
+args 為 ["-y", "@microsoft/postgres-mcp", "run"]
+環境變數 POSTGRES_MCP_CONNECTION_STRING 設定為：postgresql://postgres.oaejpcemuruihokvrysm:nQa6k_$!Yut2vGj@aws-0-ap-northeast-2.pooler.supabase.com:5432/postgres
+設定如下:
+{
+  "mcpServers": {
+    "supabase-postgres": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@microsoft/postgres-mcp",
+        "run"
+      ],
+      "env": {
+        "POSTGRES_MCP_CONNECTION_STRING": "postgresql://postgres.oaejpcemuruihokvrysm:nQa6k_$!Yut2vGj@aws-0-ap-northeast-2.pooler.supabase.com:5432/postgres"
+      }
+    }
+  }
+}
